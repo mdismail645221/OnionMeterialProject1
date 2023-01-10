@@ -1,6 +1,7 @@
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Stack, Typography } from '@mui/material';
 
 import React from 'react';
+import { SearchBox } from './heroSection.style';
 
 const HeroSection = () => {
     return (
@@ -20,19 +21,22 @@ const HeroSection = () => {
                     placeItems: 'center'
                 }}>
                     {/* ====> middle content box ===> */}
-                    <Box sx={{
-                        width: '50%',
-                        // height: '100%',
-                        background: 'red'
+                    <Stack  spacing={5} sx={{
+                        // width: 600,
+                        // margin: '0 auto',
+                        // textAlign: 'center',
                     }}>
-                        <Typography variant='h4' textAlign='center'>
+                        <Typography variant='h3' textAlign='center'>
                             Best food waiting for belly.
                         </Typography>
 
                         {/* search bar */}
-                        <input type='search' placeholder='search bar' />
+                        <SearchBox>
+                             <input type='search' placeholder='search bar' />
+                             <button>Search</button>
+                        </SearchBox>
 
-                    </Box>
+                    </Stack>
                 </Box>
             </Container>
         </Box>
