@@ -4,12 +4,16 @@ import { styled, Box, Tabs, Tab } from '@mui/material';
 
 
 const CustomTabs = styled(Tabs)(({ theme }) => ({
-    padding: '5px',
+    padding: '10px 0px',
     fontWeight: '700',
-   '& .css-1wf8b0h-MuiTabs-flexContainer ': {
+   '& .css-1wf8b0h-MuiTabs-flexContainer, button': {
      justifyContent: 'space-between',
      maxWidth: '600px',
-     margin: '0 auto'
+     margin: '0 auto',
+     fontWeight: '900',
+     background: '#eeeeeeee',
+     // boxShadow: '5px 5px 10px',
+     borderRadius: '50px',
 
    }
 }))
